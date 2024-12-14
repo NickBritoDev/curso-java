@@ -1,0 +1,14 @@
+| **Operador** | **Descrição**                              | **Exemplo**               | **Resultado**                             |
+|--------------|--------------------------------------------|---------------------------|-------------------------------------------|
+| `+`          | Adição                                     | `5 + 3`                   | `8`                                       |
+| `-`          | Subtração                                  | `5 - 3`                   | `2`                                       |
+| `*`          | Multiplicação                              | `5 * 3`                   | `15`                                      |
+| `/`          | Divisão                                    | `5 / 3`                   | `1` (divisão inteira)                     |
+| `%`          | Módulo (resto da divisão)                  | `5 % 3`                   | `2`                                       |
+| `++`         | Incremento: adiciona 1 ao valor.           | `x++` ou `++x`            | Incrementa o valor de `x` em 1.           |
+| `--`         | Decremento: subtrai 1 do valor.            | `x--` ou `--x`            | Decrementa o valor de `x` em 1.           |
+| `+=`         | Atribuição composta de soma.               | `x += 3`                  | Equivalente a `x = x + 3`.                |
+| `-=`         | Atribuição composta de subtração.          | `x -= 3`                  | Equivalente a `x = x - 3`.                |
+| `*=`         | Atribuição composta de multiplicação.      | `x *= 2`                  | Equivalente a `x = x * 2`.                |
+| `/=`         | Atribuição composta de divisão.            | `x /= 2`                  | Equivalente a `x = x / 2`.                |
+| `%=`         | Atribuição composta de módulo.             | `x %= 3`                  | Equivalente a `x = x % 3`.                |

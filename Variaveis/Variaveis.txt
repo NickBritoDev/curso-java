@@ -1,0 +1,21 @@
+# Tipos de Variáveis em Java
+
+| Tipo de Dados | Palavra-chave           | Tamanho (bits)   | Intervalo ou Descrição                                                                 |
+| ------------- | ----------------------- | ---------------- | -------------------------------------------------------------------------------------  |
+| **byte**      | `byte`                  | 8                | -128 a 127                                                                             |
+| **short**     | `short`                 | 16               | -32.768 a 32.767                                                                       |
+| **int**       | `int`                   | 32               | -2.147.483.648 a 2.147.483.647                                                         |
+| **long**      | `long`                  | 64               | -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807                                 |
+| **float**     | `float`                 | 32               | Número com ponto flutuante de precisão simples (aproximadamente 7 casas decimais).     |
+| **double**    | `double`                | 64               | Número com ponto flutuante de precisão dupla (aproximadamente 15 casas decimais).      |
+| **char**      | `char`                  | 16               | Armazena um único caractere Unicode.                                                   |
+| **boolean**   | `boolean`               | 1 (teórico)      | Valores lógicos: `true` ou `false`.                                                    |
+| **String**    | `String`                | Variável         | Cadeias de caracteres, não é um tipo primitivo, mas uma classe.                        |
+
+# Observações:
+
+- Os tipos primitivos (`byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`) são usados para armazenar valores básicos.
+- `String` é uma classe e usada para armazenar sequências de caracteres.
+- Use `f` ao final de números para declarar `float` (ex.: `1.75f`).
+- Use `L` ao final de números para declarar `long` (ex.: `7800000000L`).
+- O tipo `char` aceita um único caractere entre aspas simples (`'`).

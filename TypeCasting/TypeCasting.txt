@@ -1,0 +1,40 @@
+# Tabela de **Type Casting** em Java
+
+| **Tipo de Casting**                              | **Descrição**                                                                                                        | **Exemplo**                                                    | **Resultado**                                                               |
+|------------------------                          |----------------------------------------------------------------------------                                          |-------------------------------------------------------         |---------------------------------------------------------------              |
+| **Casting Implícito (Upcasting)**                | Quando o tipo de dado é convertido automaticamente de um tipo menor para um tipo maior (sem perda de dados).         | `int x = 10; long y = x;`                                      | O valor de `x` (int) é automaticamente convertido para `long`.              |
+| **Casting Explícito (Downcasting)**              | Quando o tipo de dado maior é convertido manualmente para um tipo menor (pode ocorrer perda de dados).               | `double x = 10.5; int y = (int) x;`                            | O valor de `x` (double) é convertido para `int`, truncando a parte decimal. |
+| **Casting entre Tipos Primitivos**               | Conversão entre tipos primitivos de tamanhos diferentes (de maior para menor ou vice-versa).                         | `float f = 10.75f; int i = (int) f;`                           | O valor de `f` é truncado, resultando em `i = 10`.                          |
+| **Conversão de `char` para `int`**               | Um `char` pode ser convertido para um `int`, representando o valor numérico (Unicode) do caractere.                  | `char c = 'A'; int i = (int) c;`                               | O valor Unicode de `'A'` (65) é armazenado em `i`.                          |
+| **Conversão de `int` para `char`**               | Um `int` pode ser convertido para `char`, desde que o valor do `int` seja dentro do intervalo de caracteres válidos. | `int i = 65; char c = (char) i;`                               | O valor de `i` (65) é convertido para o caractere `'A'`.                    |
+| **Conversão de `String` para `int`**             | O `String` pode ser convertido para um tipo numérico usando `Integer.parseInt()` ou `Double.parseDouble()`.          | `String s = "123"; int i = Integer.parseInt(s);`               | A string `"123"` é convertida para o valor inteiro `123`.                   |
+| **Conversão de `int` para `String`**             | Um `int` pode ser convertido para `String` utilizando a função `String.valueOf()`.                                   | `int i = 123; String s = String.valueOf(i);`                   | O valor de `i` (123) é convertido para a string `"123"`.                    |
+| **Casting de Tipos de Referência (Upcasting)**   | Quando um objeto de uma subclasse é atribuído a uma variável da classe pai. O casting é implícito.                   | `Object obj = new String("Texto");`                            | A conversão de `String` para `Object` é feita automaticamente.              |
+| **Casting de Tipos de Referência (Downcasting)** | Quando um objeto da classe pai é convertido para um tipo da subclasse. Precisa ser feito explicitamente.             | `Object obj = new String("Texto"); String str = (String) obj;` | O objeto `obj` é convertido de `Object` para `String`.                      |
+| **Verificação de Tipos com `instanceof`**        | Antes de realizar o downcasting, é recomendado verificar se o tipo é compatível usando `instanceof`.                 | `if (obj instanceof String) { String str = (String) obj; }`    | Verifica se `obj` é uma instância de `String` antes de fazer o cast.        |
+
+# Detalhamento:
+
+1. **Casting Implícito (Upcasting)**:
+   - O Java faz automaticamente quando a conversão é segura, ou seja, quando não há risco de perda de dados.
+   - Exemplo: Converter um `int` para `long`, um `char` para `int`, ou um `float` para `double`.
+
+2. **Casting Explícito (Downcasting)**:
+   - O **downcasting** é necessário quando você está convertendo um tipo maior para um tipo menor e pode ocorrer perda de dados.
+   - Exemplo: Converter um `double` para `int` ou um `long` para `short`.
+
+3. **Casting entre Tipos Primitivos**:
+   - Conversão entre tipos numéricos, como de `int` para `byte` ou de `float` para `double`, pode ser feita de forma implícita ou explícita.
+   - **Exemplo**: Ao converter de `float` para `int`, a parte decimal será perdida.
+
+4. **Conversão de `String` para Tipos Numéricos**:
+   - Para converter uma `String` em um tipo numérico, é necessário usar métodos de parse, como `Integer.parseInt()` para inteiros ou `Double.parseDouble()` para números de ponto flutuante.
+
+5. **Conversão de Tipos de Referência**:
+   - O **upcasting** é implícito e ocorre quando um objeto de uma subclasse é atribuído a uma variável da classe pai.
+   - O **downcasting** requer o uso explícito de `(Tipo)` e deve ser feito com cautela, já que pode lançar um `ClassCastException` se o objeto não for realmente da classe alvo.
+
+6. **Uso de `instanceof`**:
+   - A verificação com `instanceof` antes de fazer o **downcasting** ajuda a evitar erros de conversão e exceções em tempo de execução.
+
+Se você precisar de mais exemplos ou de um detalhamento sobre algum dos tipos de **type casting**, estou à disposição!
