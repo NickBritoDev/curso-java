@@ -1,0 +1,2 @@
+1. Compilar o codigo: javac .\HelloWorld.java
+2. Executar arquivo compilado: java aula1.HelloWorld
